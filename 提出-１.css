@@ -1,0 +1,78 @@
+h1{
+    font-family: 'Bree Serif' , serif;
+    font-size: 26px;
+}
+body{
+    margin-left: 130px;
+    display: flex;
+    padding: 40px;
+    background: #afaca6;
+    color: #333;
+}
+p{
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.tabs{
+    margin-left: 200px;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    background: #e5e5e5;
+}
+.title{
+    font-weight: bold;
+    margin-left: 350px;
+    font-size: 56px;
+    color: #ff9900;
+    text-shadow: 10px 10px 5px rgb(48, 46, 43);
+    position: absolute;
+}
+.input{
+    position: absolute;
+    opacity: 0;
+}
+.label{
+    width: 100%;
+    padding: 20px 30px;
+    background: #e58b04;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: #7f7f7f;
+    transition: 0.1s color 0.1s;
+}
+.label:hover{
+    background: #d8d8d8;
+}
+.label:active{
+    background: #ccc;
+}
+.input:checked +  .label{
+    background: #fff;
+    color: rgb(245, 250, 7);
+}
+.label{
+    width: auto;
+}
+.panel{
+    display: none;
+    padding: 20px 30px 30px;
+    background: #fff;
+    order: 1;
+}
+.input:checked + .label + .panel{
+    display: block;
+}
+div.col{
+    column-gap: 2em;
+    column-count: 3;
+    column-rule: 4px solid #f88f06;
+}
+img{
+    border-radius: 5em;
+    margin: 3px;
+}
